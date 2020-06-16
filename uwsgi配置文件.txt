@@ -1,0 +1,17 @@
+[uwsgi]
+
+socket = 172.17.200.240:5000
+
+chdir = /usr/local/bin   
+
+wsgi-file = /usr/local/bin/hello.py     
+
+callable = app     
+
+processes = 4    
+
+threads = 2    
+
+pythonpath = /www
+
+pidfile = /usr/local/bin/uwsgi.pid

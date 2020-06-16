@@ -1,0 +1,145 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/pwd/pwd",
+			"style": {
+				"navigationBarTitleText": "信息确认"
+			}
+		},
+		{
+			"path": "pages/confirmpwd/confirmpwd",
+			"style": {
+				"navigationBarTitleText": "确认密码"
+			}
+		},
+		{
+			"path": "pages/mainhome/mainhome",
+			"style": {
+				"navigationBarTitleText": "主页"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+	
+		{
+			"path": "pages/customersList/customersList",
+			"style": {
+				"navigationBarTitleText": "用户检查"
+			}
+		},
+		{
+			"path": "pages/staffManagement/staffManagement",
+			"style": {
+				"navigationBarTitleText": "员工管理"
+			}
+		},
+		{
+			"path": "pages/customerManagement/customerManagement",
+			"style": {
+				"navigationBarTitleText": "用户管理"
+			}
+		},
+		{
+			"path": "pages/check/check",
+			"style": {
+				"navigationBarTitleText": "检查"
+			}
+		},
+		{
+			"path": "pages/test/test",
+			"style": {
+				"navigationBarTitleText": "测试"
+			}
+		},
+		{
+			"path": "pages/customerManagement/addUsers/addUsers",
+			"style": {
+				"navigationBarTitleText": "添加用户"
+			}
+		},
+		{
+			"path": "pages/customerManagement/changeUsersInformation/changeUsersInformation",
+			"style": {
+				"navigationBarTitleText": "修改用户信息"
+			}
+		},
+		{
+			"path": "pages/customerManagement/deleteUsers/deleteUsers",
+			"style": {
+				"navigationBarTitleText": "删除用户"
+			}
+		},
+		{
+			"path": "pages/staffManagement/staffManagement",
+			"style": {
+				"navigationBarTitleText": "员工管理"
+			}
+		},
+		{
+			"path": "pages/staffManagement/addStaffs/addStaffs",
+			"style": {
+				"navigationBarTitleText": "添加员工"
+			}
+		},
+		{
+			"path": "pages/staffManagement/changeStaffsInformation/changeStaffsInformation",
+			"style": {
+				"navigationBarTitleText": "修改员工信息"
+			}
+		},
+		{
+			"path": "pages/staffManagement/deleteStaffs/deleteStaffs",
+			"style": {
+				"navigationBarTitleText": "删除员工"
+			}
+		},
+		{
+			"path":"pages/getcheckrecords/getcheckrecords",
+			"style":{
+				"navigationBarTitleText":"查询记录"
+			}
+		}
+	],
+	"tabBar": {
+	    "color": "#7a7e83",
+	    "selectedColor": "#0faeff",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/mainhome/mainhome",
+	        "text": "首页",
+	        "iconPath": "static/img/home.png",
+	        "selectedIconPath": "static/img/homeHL.png"
+	    }, {
+	        "pagePath": "pages/user/user",
+	        "text": "我的",
+	        "iconPath": "static/img/user.png",
+	        "selectedIconPath": "static/img/userHL.png"
+	    }]
+	},
+	
+	"globalStyle": {
+	    "navigationBarTextStyle": "white",
+	    "navigationBarBackgroundColor": "#0faeff",
+	    "backgroundColor": "#fbf9fe"
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
